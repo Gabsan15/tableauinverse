@@ -27,9 +27,12 @@ static int[] saisieTableau()
 static int programme() {
     int[] tab = saisieTableau();
     int[] tabInv = tableauInverse(tab, tab.Length);
+    Console.WriteLine("vous avez saisi:");
     for (int i = 0;i<tab.Length;i++) {
         Console.Write(tab[i]);
     }
+
+    Console.WriteLine("le tableau inverse est:");
     for (int i = 0;i<tabInv.Length ; i++) {
         Console.Write(tabInv[i]);
     }
