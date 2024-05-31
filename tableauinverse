@@ -12,10 +12,12 @@ static int[] tableauInverse(int[] tab, int len)
 }
 static int[] saisieTableau()
 {
+    Console.WriteLine("veuillez entrer la longueur du tableau");
     int lenTab = Console.Read();
     int[] res = new int[lenTab];
     for (int i = 0; i<lenTab;  i++)
     {
+        Console.WriteLine("veuillez entrer la case numéro "+i+" du  tableau");
         res[i] = Console.Read();
     }
     return res;
